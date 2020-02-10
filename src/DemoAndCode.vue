@@ -1,6 +1,8 @@
 <template>
     <section class="demo-and-code-wrapper">
-        <slot name="demo" />
+        <ClientOnly>
+            <slot name="demo" />
+        </ClientOnly>
 
         <div
             ref="codeControl"
